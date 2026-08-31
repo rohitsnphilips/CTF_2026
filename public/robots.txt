@@ -2,5 +2,5 @@ User-agent: *
 
 
 # Note: this site has been crawled and archived before.
-# If you're looking for the vault apikey, the Wayback Machine
-# (web.archive.org) may still have a snapshot lying around.
+# If you're looking for the vault apikey, you need to to find archived version of the old site. 
+# Maybe the old site clues might be in the pages??
