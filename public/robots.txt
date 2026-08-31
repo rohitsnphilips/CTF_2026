@@ -1,0 +1,6 @@
+User-agent: *
+
+
+# Note: this site has been crawled and archived before.
+# If you're looking for the vault apikey, the Wayback Machine
+# (web.archive.org) may still have a snapshot lying around.

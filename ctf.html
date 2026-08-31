@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACME Corporation - Vault Management System</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1>🏢 ACME Corporation</h1>
+      <p>Secure Vault Management Solution</p>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome to ACME Vault</h2>
+      <p>Enterprise-grade security for your sensitive data.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>🔐 Encryption</h3>
+        <p>Military-grade encryption for all stored data.</p>
+      </div>
+      <div class="feature">
+        <h3>⚡ Speed</h3>
+        <p>Lightning-fast API responses and secure transactions.</p>
+      </div>
+      <div class="feature">
+        <h3>📊 Analytics</h3>
+        <p>Real-time monitoring and detailed audit logs.</p>
+      </div>
+    </section>
+
+    <section class="info">
+      <h3>System Status</h3>
+      <div id="status">Loading...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ACME Corporation. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/vault-config.js"></script>
+  <script>
+    fetch('/api/status')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('status').innerHTML = `
+          <p>✅ System Online</p>
+          <p>Version: ${data.version}</p>
+        `;
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "acme-vault-ctf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ACME Vault web reconnaissance CTF challenge",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
