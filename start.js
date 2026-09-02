@@ -17,7 +17,11 @@ app.get('/robots.txt', (req, res) => {
   const apiKey = req.query.api_key;
 
   if (apiKey === 'acme_vault_sk_x7q2p9zt') {
-    return res.type('text').send('ZmxhZ3tkMXdrNnR1eX0=\n');
+    return res.type('text').send(
+      'Almost there! You have uncovered the sensitive page hidden behind the vault key.\n' +
+      'It looks encrypted... decode it to claim your flag:\n' +
+      'ZmxhZ3tkMXdrNnR1eX0=\n'
+    );
   }
 
   return res.type('text').sendFile(path.join(__dirname, 'public', 'robots.txt'));
